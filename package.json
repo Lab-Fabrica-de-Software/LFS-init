@@ -1,0 +1,45 @@
+{
+  "name": "@labfs/create-init",
+  "version": "0.1.2",
+  "bin": {
+    "lfs": "./dist/index.js"
+  },
+  "description": "Initializer new Lab Fabrica de Software projects with a predefined structure",
+  "keywords": [
+    "cli",
+    "initializer",
+    "project-setup",
+    "lfs",
+    "lab-fabrica-de-software"
+  ],
+  "files": [
+    "dist"
+  ],
+  "homepage": "https://github.com/Lab-Fabrica-de-Software/LFS-init#readme",
+  "bugs": {
+    "url": "https://github.com/Lab-Fabrica-de-Software/LFS-init/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Lab-Fabrica-de-Software/LFS-init.git"
+  },
+  "license": "MIT",
+  "author": "Laboratório Fábrica de Software",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "npx tsc && node dist/index.js",
+    "link": "npm run build && npm link",
+    "prepare": "npm run build"
+  },
+  "devDependencies": {
+    "@types/node": "^24.4.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.2"
+  },
+  "dependencies": {
+    "@inquirer/prompts": "^7.8.6"
+  }
+}
