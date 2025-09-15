@@ -1,12 +1,12 @@
 {
   "name": "@labfs/create-init",
-  "version": "0.1.2",
+  "version": "1.0.0",
   "bin": {
     "lfs": "./dist/index.js"
   },
   "description": "Initializer new Lab Fabrica de Software projects with a predefined structure",
   "keywords": [
-    "cli",
+    "init",
     "initializer",
     "project-setup",
     "lfs",
