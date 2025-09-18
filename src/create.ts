@@ -33,7 +33,7 @@ async function askAll(): Promise<ProjectData> {
       message: "Status do projeto:",
       choices: ["not-started", "in-progress", "completed"],
     }),
-    image: await askImages(),
+    images: await askImages(),
     stacks: await askStacks(),
     links: await askLinks(),
   };

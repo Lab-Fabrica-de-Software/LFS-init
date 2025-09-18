@@ -12,7 +12,7 @@ export interface ProjectImage {
 }
 
 export interface ProjectData {
-  image: ProjectImage[];
+  images: ProjectImage[];
   title: string;
   description: string;
   status: "not-started" | "in-progress" | "completed";

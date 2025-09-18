@@ -4,7 +4,6 @@
 import fs from "fs";
 import path from "path";
 import type { ProjectData } from "../types/project.js";
-import { getRepoName } from "./git.js";
 import { writeFileSync } from "fs";
 import { generateStackBadges } from "../constants/stacks.js";
 
@@ -80,7 +79,9 @@ ${generateStackBadges(jsonData.stacks)}
 
 ### 1. Clone o repositório
 \`\`\`bash
-git clone ${getRepoName ?? "<REPO_URL>"}
+
+git clone "<REPO_URL>"
+
 \`\`\`
 
 ### 2. Instale as dependências
