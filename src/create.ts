@@ -14,7 +14,7 @@ export default async function create(): Promise<void> {
       "⚠️ README.md e docs/info.json já existem. Não sobrescrevendo."
     );
   } else {
-    const jsonData = await askAll();
+    const jsonData:ProjectData = await askAll();
     saveInfo(jsonData);
     saveReadme(jsonData);
   }

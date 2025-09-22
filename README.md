@@ -114,3 +114,4 @@ lfs
   ]
 }
 ```
+Lab-Fábrica de Software • 2025

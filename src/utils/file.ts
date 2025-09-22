@@ -100,7 +100,9 @@ npm run dev
 Rodar a suíte de testes:
 \`\`\`bash
 npm run test
-\`\`\``;
+\`\`\`
+Lab-Fábrica de Software • 2025`
+;
 
     writeFileSync(paths.readmePath, readmeContent.trim());
     console.log("📝 README.md criado.");
