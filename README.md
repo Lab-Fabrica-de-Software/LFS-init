@@ -104,7 +104,7 @@ lfs
   "title": "exemplo",
   "description": "descrição",
   "status": "in-progress",
-  "image": [],
+  "images": [],
   "stacks": [],
   "links": [
     {

@@ -80,7 +80,6 @@ async function askLinks(): Promise<ProjectLink[]> {
     links.push({ name, url });
     addMore = more;
   }
-
   return links;
 }
 
@@ -96,9 +95,8 @@ async function askImages(): Promise<ProjectImage[]> {
 
   while (addMore) {
     const url = await input({
-      message: "URL/PATH:",
-      validate: (v) =>
-        v.startsWith("http") || v.startsWith("docs/") || "URL inválida",
+      message: "URL:",
+      validate: (v) => v.startsWith("http") || "URL inválida",
     });
 
     const more = await confirm({
@@ -112,5 +110,3 @@ async function askImages(): Promise<ProjectImage[]> {
 
   return images;
 }
-
-
