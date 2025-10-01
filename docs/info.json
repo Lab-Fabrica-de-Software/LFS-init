@@ -6,14 +6,5 @@
   "stacks": [
     "typescript"
   ],
-  "links": [
-    {
-      "name": "Github",
-      "url": "https://github.com/Lab-Fabrica-de-Software/LFS-init"
-    },
-    {
-      "name": "Npm",
-      "url": "https://www.npmjs.com/package/@labfs/create-init"
-    }
-  ]
+  "links": []
 }
