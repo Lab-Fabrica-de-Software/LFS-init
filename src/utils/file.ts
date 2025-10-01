@@ -48,61 +48,60 @@ export function saveReadme(jsonData: ProjectData): void {
   if (existsFile("readme")) {
     console.log("⚠️ README.md já existe. Não sobrescrevendo.");
   } else {
+    const currentYear = new Date().getFullYear();
     const readmeContent = `# 🚀 ${jsonData.title}
 
-## 📖 Visão Geral
-- ${jsonData.description}
-- <EXPLICAÇÃO_DO_PROBLEMA_E_OBJETIVO>
-- <PÚBLICO_ALVO_E_BENEFÍCIOS>
+  ## 📖 Visão Geral
+  ${jsonData.description}
 
-## 📋 Funcionalidades Principais
-- ✅ <FUNCIONALIDADE_1>
-- ✅ <FUNCIONALIDADE_2>
-- ✅ <FUNCIONALIDADE_3>
+  ## 📋 Funcionalidades Principais
+  - ✅ <FUNCIONALIDADE_1>
+  - ✅ <FUNCIONALIDADE_2>
+  - ✅ <FUNCIONALIDADE_3>
 
-## 🛠️ Tecnologias Utilizadas
-${generateStackBadges(jsonData.stacks)}
+  ## 🛠️ Tecnologias Utilizadas
+  ${generateStackBadges(jsonData.stacks)}
 
-## 📦 Bibliotecas Principais  
-- [biblioteca](link) → descrição de utilidade  
+  ## 📦 Bibliotecas Principais  
+  - [biblioteca](link) → descrição de utilidade  
 
-## 📂 Estrutura do Projeto
-\`\`\`bash
-.
-├── backend/      # Código do servidor
-├── frontend/     # Interface do usuário
-├── docs/         # Documentação
-└── README.md     # Este arquivo
-\`\`\`
+  ## 📂 Estrutura do Projeto
+  \`\`\`bash
+  .
+  ├── backend/      # Código do servidor
+  ├── frontend/     # Interface do usuário
+  ├── docs/         # Documentação
+  └── README.md     # Este arquivo
+  \`\`\`
 
-## ⚙️ Instalação e Uso
+  ## ⚙️ Instalação e Uso
 
-### 1. Clone o repositório
-\`\`\`bash
+  ### 1. Clone o repositório
+  \`\`\`bash
 
-git clone "<REPO_URL>"
+  git clone "<REPO_URL>"
 
-\`\`\`
+  \`\`\`
 
-### 2. Instale as dependências
-\`\`\`bash
-npm install
-\`\`\`
+  ### 2. Instale as dependências
+  \`\`\`bash
+  npm install
+  \`\`\`
 
-### 3. Execute o projeto
-\`\`\`bash
-npm run dev
-\`\`\`
+  ### 3. Execute o projeto
+  \`\`\`bash
+  npm run dev
+  \`\`\`
 
-> O servidor será iniciado em: [http://localhost:3000](http://localhost:3000)
+  > O servidor será iniciado em: [http://localhost:3000](http://localhost:3000)
 
-## 🧪 Testes
-Rodar a suíte de testes:
-\`\`\`bash
-npm run test
-\`\`\`
-Lab-Fábrica de Software • 2025`
-;
+  ## 🧪 Testes
+  Rodar a suíte de testes:
+  \`\`\`bash
+  npm run test
+  \`\`\`
+  Lab-Fábrica de Software • ${currentYear}`
+  ;
 
     writeFileSync(paths.readmePath, readmeContent.trim());
     console.log("📝 README.md criado.");
