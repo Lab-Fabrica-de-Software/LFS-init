@@ -1,7 +1,7 @@
 {
   "images": ["https://raw.githubusercontent.com/Lab-Fabrica-de-Software/LFS-init/refs/heads/main/docs/banner.png"],
-  "title": "LFS-init",
-  "description": "Inicializador de novos projetos do Lab Fabrica de Software com estrutura pré-definida",
+  "title": "Initializer LFS",
+  "description": "Inicializador de novos projetos do Lab Fabrica de Software com estrutura pré-definida.",
   "status": "completed",
   "stacks": [
     "typescript"
